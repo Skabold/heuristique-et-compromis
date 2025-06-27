@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mes rendez-vous - Plateforme de rendez-vous médicaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Mes rendez-vous</h1>
+    </header>
+
+    <main role="main">
+      <section aria-labelledby="titre-rdv">
+        <h2 id="titre-rdv">Rendez-vous à venir</h2>
+
+        <table>
+          <caption>Liste de vos rendez-vous à venir</caption>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Heure</th>
+              <th scope="col">Praticien</th>
+              <th scope="col">Spécialité</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>03/07/2025</td>
+              <td>14:30</td>
+              <td>Dr Dupont</td>
+              <td>Généraliste</td>
+              <td>
+                <a href="#">Annuler</a> | <a href="#">Déplacer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>15/07/2025</td>
+              <td>09:00</td>
+              <td>Dr Bernard</td>
+              <td>Ophtalmologue</td>
+              <td>
+                <a href="#">Annuler</a> | <a href="#">Déplacer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Rendez-vous passés</h2>
+        <ul>
+          <li>20/06/2025 à 10:00 – Dr Lahlou (Dentiste)</li>
+          <li>05/06/2025 à 11:30 – Dr Dupont (Généraliste)</li>
+        </ul>
+
+        <p><a href="accueil.html">← Retour à l’accueil</a></p>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Établissement public de santé</p>
+    </footer>
+  </body>
+</html>

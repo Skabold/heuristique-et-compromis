@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prendre un rendez-vous - Plateforme de rendez-vous médicaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Prendre un rendez-vous</h1>
+    </header>
+
+    <main role="main">
+      <section aria-labelledby="titre-prise">
+        <h2 id="titre-prise">Formulaire de prise de rendez-vous</h2>
+
+        <form action="confirmation.html" method="get">
+          <div>
+            <label for="praticien">Praticien</label>
+            <select id="praticien" name="praticien" required>
+              <option value="">-- Choisir un praticien --</option>
+              <option value="dupont">Dr Dupont (généraliste)</option>
+              <option value="bernard">Dr Bernard (ophtalmologue)</option>
+              <option value="lahlou">Dr Lahlou (dentiste)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="date">Date du rendez-vous</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div>
+            <label for="heure">Heure du rendez-vous</label>
+            <input type="time" id="heure" name="heure" required />
+          </div>
+
+          <button type="submit">Confirmer le rendez-vous</button>
+        </form>
+
+        <p><a href="accueil.html">← Retour à l’accueil</a></p>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Établissement public de santé</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rechercher un praticien - Plateforme de rendez-vous médicaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Rechercher un praticien</h1>
+    </header>
+
+    <main role="main">
+      <section aria-labelledby="titre-recherche">
+        <h2 id="titre-recherche">Trouver un professionnel de santé</h2>
+
+        <form action="resultats.html" method="get">
+          <div>
+            <label for="specialite">Spécialité</label>
+            <select id="specialite" name="specialite" required>
+              <option value="">-- Choisir une spécialité --</option>
+              <option value="generaliste">Médecin généraliste</option>
+              <option value="dentiste">Dentiste</option>
+              <option value="ophtalmologue">Ophtalmologue</option>
+              <option value="gynecologue">Gynécologue</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="ville">Ville ou code postal</label>
+            <input type="text" id="ville" name="ville" required />
+          </div>
+
+          <div>
+            <label for="langue">Langue parlée</label>
+            <select id="langue" name="langue">
+              <option value="">-- Indifférent --</option>
+              <option value="fr">Français</option>
+              <option value="en">Anglais</option>
+              <option value="ar">Arabe</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <button type="submit">Rechercher</button>
+        </form>
+
+        <p><a href="accueil.html">← Retour à l’accueil</a></p>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Établissement public de santé</p>
+    </footer>
+  </body>
+</html>

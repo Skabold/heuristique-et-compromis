@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Connexion - Plateforme de rendez-vous médicaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Connexion à votre compte</h1>
+    </header>
+
+    <main role="main">
+      <section class="login-container" aria-labelledby="titre-form">
+        <h2 id="titre-form">Identifiez-vous</h2>
+
+        <!-- Redirection simulée vers accueil.html -->
+        <form action="accueil.html" method="get">
+          <div class="form-group">
+            <label for="email">Adresse e-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="current-password"
+            />
+          </div>
+
+          <button type="submit" class="button">Se connecter</button>
+        </form>
+        <nav role="navigation" aria-label="Menu principal">
+          <ul>
+            <li><a href="inscription.html">🧾 Créer un compte</a></li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Établissement public de santé</p>
+    </footer>
+  </body>
+</html>
